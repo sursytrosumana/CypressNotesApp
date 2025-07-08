@@ -1,0 +1,18 @@
+{
+  "name": "notes-app-tests",
+  "version": "1.0.0",
+  "devDependencies": {
+    "cypress": "^13.0.0",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+"scripts": {
+  "test:all": "cypress run",
+  "report:merge": "mochawesome-merge cypress/reports/html/*.json > merged-report.json",
+  "report:generate": "marge merged-report.json -f summary-report -o cypress/reports/html",
+  "report": "npm run test:all && npm run report:merge && npm run report:generate"
+}
+
+}
