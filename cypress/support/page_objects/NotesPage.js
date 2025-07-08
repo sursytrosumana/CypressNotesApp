@@ -28,12 +28,12 @@ class NotesPage {
       cy.contains('Save').click();
     }
   
-    deleteNote(title) {
-      cy.contains(title).click();
-      cy.contains('Delete').click();
-      cy.get('button[data-testid="note-delete-confirm"]').click();
-      cy.contains('Delete').click();
-    }
+    // deleteNote(title) {
+    //   cy.contains(title).click();
+    //   cy.contains('Delete').click();
+    //   cy.get('button[data-testid="note-delete-confirm"]').click();
+    //   cy.contains('Delete').click();
+    // }
   }
   
   export default new NotesPage();

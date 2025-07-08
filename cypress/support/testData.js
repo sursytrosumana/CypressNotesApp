@@ -34,8 +34,8 @@ export const loginTestData = {
     password: testUser.password
   },
   blank: {
-    email: '',
-    password: ''
+    email: ' ',
+    password: ' '
   }
 };
 

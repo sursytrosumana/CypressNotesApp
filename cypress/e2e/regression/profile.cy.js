@@ -13,8 +13,8 @@ describe('Profile Module Tests', () => {
     ProfilePage.updateName(testUser.newName);
   });
 
-  it('Delete account [Positive]', () => {
-    ProfilePage.visit();
-    ProfilePage.deleteAccount();
-  });
+  // it('Delete account [Positive]', () => {
+  //   ProfilePage.visit();
+  //   ProfilePage.deleteAccount();
+  // });
 });

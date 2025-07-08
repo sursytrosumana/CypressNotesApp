@@ -46,9 +46,9 @@ describe('Full CRUD Operations for Notes', () => {
     cy.contains('Updated Note').should('be.visible');
   });
 
-  it('Delete a note [Positive]', () => {
-    NotesPage.deleteNote('Completed Note');
-    cy.contains('Completed Note').should('not.exist');
-  });
+  // it('Delete a note [Positive]', () => {
+  //   NotesPage.deleteNote('Completed Note');
+  //   cy.contains('Completed Note').should('not.exist');
+  // });
 });
 

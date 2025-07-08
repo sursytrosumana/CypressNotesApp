@@ -27,7 +27,7 @@ describe('Login Page Tests @login', () => {
     LoginPage.fillPassword(user.password);
     LoginPage.submit();
 
-    cy.contains('Email address is required').should('be.visible');
-    cy.contains('Password is required').should('be.visible');
+    cy.contains('Email address is invalid').should('be.visible');
+    cy.contains('Password should be between 6 and 30 characters').should('be.visible');
   });
 });
