@@ -10,6 +10,7 @@ describe('Profile Module Tests', () => {
 
   it('Update profile with valid name [Positive]', () => {
     ProfilePage.visit();
+    cy.wait(5000);
     ProfilePage.updateName(testUser.newName);
   });
 
